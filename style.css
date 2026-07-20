@@ -46,13 +46,13 @@ nav{
     line-height:1.1;
 }
 
-ul{
+nav ul{
     display: flex;
     list-style: none;
     gap: 35px;
 }
 
-ul li a{
+nav ul li a{
     text-decoration: none;
     color: #374151;
     font-size: 16px;
@@ -67,6 +67,22 @@ ul li a{
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+.outline-btn{
+    background-color: white;
+    color: #2563EB;
+    border: 2px solid #2563EB;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.outline-btn:hover{
+    background-color: #2563EB;
+    color: white;
 }
 /* Hero Section Style */
 
@@ -161,4 +177,130 @@ ul li a{
 .designation{
     color:#6B7280;
     line-height:1.6;
+}
+/* Pricing Section */
+
+.pricing{
+    margin:100px auto;
+    text-align:center;
+}
+
+.pricing-subtitle{
+    color:#6B7280;
+    margin-top:-20px;
+    margin-bottom:50px;
+}
+
+.pricing-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.pricing-card{
+    border:1px solid #E5E7EB;
+    border-radius:12px;
+    padding:30px;
+    text-align:left;
+    transition:.3s;
+}
+
+.pricing-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.plan{
+    font-size:13px;
+    font-weight:bold;
+    color:#6B7280;
+    letter-spacing:1px;
+}
+
+.pricing-card h3{
+    font-size:48px;
+    margin:10px 0;
+}
+
+.price-text{
+    color:#6B7280;
+    margin-bottom:25px;
+}
+
+.feature-list{
+    list-style:disc;
+    margin-left:20px;
+    margin-bottom:30px;
+    display:block;
+}
+
+.feature-list li{
+    margin-bottom:12px;
+    color:#4B5563;
+}
+
+.active{
+    background:#111827;
+    color:white;
+}
+
+.active .plan,
+.active .price-text,
+.active li{
+    color:#E5E7EB;
+}
+
+.pricing-card button{
+    width:100%;
+    margin-top:20px;
+}
+.pricing-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* Hackathon Section */
+
+.hackathon{
+    background:#2563EB;
+    color:white;
+    margin:100px 0;
+    padding:80px 0;
+}
+
+.hackathon-content{
+    text-align:center;
+}
+
+.hackathon-content h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hackathon-content p{
+    max-width:700px;
+    margin:0 auto 50px;
+    line-height:1.8;
+}
+
+.hackathon-boxes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.hackathon-box{
+    background:rgba(255,255,255,.15);
+    padding:30px;
+    border-radius:12px;
+    width:220px;
+}
+
+.hackathon-box h3{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.hackathon-box p{
+    margin:0;
 }
