@@ -68,3 +68,39 @@ ul li a{
     font-weight: 600;
     cursor: pointer;
 }
+/* Hero Section Style */
+
+.hero-section{
+    background-image: url("./assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay{
+    background: rgba(0,0,0,0.60);
+}
+
+.hero-content{
+    text-align: center;
+    color: white;
+    padding: 170px 0;
+}
+
+.hero-content h1{
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span{
+    font-style: italic;
+}
+
+.hero-content p{
+    max-width: 700px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+    font-size: 18px;
+    color: #E5E7EB;
+}
